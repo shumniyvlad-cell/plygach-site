@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Полная запись — Елена Плыгач</title>
+<meta name="description" content="Открытая встреча для психологов и коучей: почему у хорошего специалиста пустое расписание и что с этим делать. Понедельник, 28 сентября, 19:00 по Москве, Zoom.">
+<meta name="theme-color" content="#E8E9E7">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Полная запись. Почему у хорошего психолога нет клиентов">
+<meta property="og:description" content="Открытая встреча Елены Плыгач для психологов и коучей. 28 сентября, 19:00 по Москве, Zoom. Бесплатно.">
+<meta property="og:image" content="https://shumniyvlad-cell.github.io/plygach-site/img/og.jpg">
+<meta property="og:url" content="https://shumniyvlad-cell.github.io/plygach-site/">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230F1216'/%3E%3Crect x='14' y='14' width='36' height='36' fill='none' stroke='%23E8E9E7' stroke-width='3'/%3E%3Crect x='22' y='22' width='20' height='20' fill='%238CC6E8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prata&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#E8E9E7;
+  --paper-2:#F2F2F0;
+  --paper-3:#DCDDDA;
+  --ink:#0F1216;
+  --ink-2:#4A5058;
+  --ink-3:#7A8088;
+  --rule:#C6C8C4;
+  --sky:#8CC6E8;
+  --sky-deep:#1F5F8A;
+  --serif:'Prata',Georgia,'Times New Roman',serif;
+  --sans:'Golos Text',-apple-system,'Segoe UI',Arial,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,Consolas,monospace;
+  --rail:104px;
+  --gutter:clamp(16px,4vw,56px);
+  --max:1360px;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-size:1.0625rem;line-height:1.55;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:var(--serif);font-weight:400;text-wrap:balance;letter-spacing:-.005em}
+h1{font-size:clamp(2.5rem,6.4vw,5.9rem);line-height:1.0}
+h2{font-size:clamp(1.9rem,3.6vw,3.15rem);line-height:1.08}
+h3{font-size:clamp(1.25rem,1.9vw,1.6rem);line-height:1.2}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+.mono{font-family:var(--mono);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;font-weight:500}
+.small{font-size:.72rem}
+.lead{font-size:clamp(1.05rem,1.35vw,1.3rem);line-height:1.5;color:var(--ink-2);max-width:60ch}
+mark{background:var(--sky);color:var(--ink);padding:0 .06em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+:focus-visible{outline:2px solid var(--sky-deep);outline-offset:3px}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+
+/* зерно */
+.grain{position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.055;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* шапка */
+.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.top__in{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:64px}
+.brand{text-decoration:none;font-family:var(--serif);font-size:1.15rem;letter-spacing:.01em}
+.top__meta{color:var(--ink-2)}
+.top__cta{text-decoration:none;font-size:.9rem;font-weight:500;padding:.55rem 1rem;border:1px solid var(--ink);transition:background .2s,color .2s}
+.top__cta:hover{background:var(--ink);color:var(--paper)}
+@media (max-width:720px){.top__meta{display:none}}
+
+/* кнопка */
+.btn{display:inline-flex;align-items:center;gap:1.1rem;background:var(--ink);color:var(--paper);text-decoration:none;
+  padding:1.05rem 1.35rem 1.05rem 1.5rem;font-weight:500;font-size:1.02rem;border:1px solid var(--ink);transition:background .22s,color .22s,transform .22s}
+.btn .arr{font-family:var(--mono);font-size:1rem;transition:transform .22s}
+.btn:hover{background:var(--sky);color:var(--ink);border-color:var(--sky)}
+.btn:hover .arr{transform:translateX(5px)}
+.btn--light{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.btn--light:hover{background:var(--sky);border-color:var(--sky)}
+
+/* герой */
+.hero{display:grid;grid-template-columns:1.08fr .92fr;min-height:calc(100svh - 64px);border-bottom:1px solid var(--rule)}
+.hero__text{padding:clamp(2.2rem,5vw,5rem) var(--gutter) clamp(2rem,4vw,3.5rem) var(--gutter);display:flex;flex-direction:column;justify-content:space-between;gap:2.4rem}
+.hero__top{display:flex;flex-direction:column;gap:1.6rem}
+.eyebrow{color:var(--ink-2);display:flex;align-items:center;gap:.9rem}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--ink)}
+.hero h1{max-width:12ch}
+.hero__actions{display:flex;flex-direction:column;gap:.9rem;align-items:flex-start}
+.hero__note{color:var(--ink-3)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;border-top:1px solid var(--rule);padding-top:1.2rem}
+.facts div{display:flex;flex-direction:column;gap:.35rem}
+.facts dt{color:var(--ink-3)}
+.facts dd{margin:0;font-family:var(--sans);text-transform:none;letter-spacing:0;font-size:.98rem;line-height:1.35}
+.hero__media{margin:0;position:relative;border-left:1px solid var(--rule);overflow:hidden;background:var(--paper-3)}
+.hero__media img{width:100%;height:100%;object-fit:cover;object-position:50% 62%;
+  animation:drift 22s ease-in-out infinite alternate}
+@keyframes drift{from{transform:scale(1)}to{transform:scale(1.045)}}
+.hero__media figcaption{position:absolute;left:1.2rem;bottom:1.1rem;color:var(--ink-2);background:color-mix(in srgb,var(--paper) 78%,transparent);padding:.45rem .7rem}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero__media{order:-1;border-left:0;border-bottom:1px solid var(--rule);aspect-ratio:4/4.6}
+  .hero__media img{object-position:50% 70%}
+  .facts{grid-template-columns:1fr 1fr}
+}
+@media (max-width:520px){.facts{grid-template-columns:1fr}}
+
+/* бегущая строка */
+.ticker{border-bottom:1px solid var(--rule);overflow:hidden;background:var(--paper-2)}
+.ticker__track{display:flex;width:max-content;animation:tick 42s linear infinite}
+.ticker:hover .ticker__track{animation-play-state:paused}
+.ticker span{padding:.85rem 1.4rem;white-space:nowrap;color:var(--ink-2)}
+.ticker i{color:var(--sky-deep);font-style:normal}
+@keyframes tick{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ticker__track{animation:none}.hero__media img{animation:none}}
+
+/* слоты расписания */
+.slot{display:grid;grid-template-columns:var(--rail) 1fr;border-bottom:1px solid var(--rule)}
+.slot__time{padding:clamp(2.2rem,4vw,4rem) 0 0 var(--gutter);color:var(--ink-3)}
+.slot__time span{position:sticky;top:88px;display:block}
+.slot__body{padding:clamp(2.2rem,4vw,4rem) var(--gutter) clamp(2.6rem,5vw,5rem) clamp(1.2rem,3vw,3rem);display:flex;flex-direction:column;gap:clamp(1.4rem,2.4vw,2.2rem);max-width:calc(var(--max) - var(--rail))}
+.slot__head{display:flex;flex-direction:column;gap:1rem}
+.slot__head h2{max-width:17ch}
+.slot__head .lead{max-width:58ch}
+@media (max-width:900px){
+  .slot{grid-template-columns:1fr}
+  .slot__time{padding:1.6rem var(--gutter) 0}
+  .slot__time span{position:static}
+  .slot__body{padding:1rem var(--gutter) 2.6rem}
+}
+
+/* это про вас */
+.checks{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--rule);border-left:1px solid var(--rule)}
+@media (max-width:900px){.checks{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.checks{grid-template-columns:1fr}}
+.checks li{border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:1.3rem 1.3rem 1.5rem;display:flex;flex-direction:column;gap:.9rem;background:var(--paper)}
+.checks .mono{color:var(--ink-3)}
+.checks p{font-size:1.05rem;line-height:1.45}
+
+/* пять причин — расписание */
+.sched{border-top:1px solid var(--ink);counter-reset:r}
+.sched__row{display:grid;grid-template-columns:236px 1fr;gap:1.6rem;align-items:start;padding:1.35rem 0 1.5rem;border-bottom:1px solid var(--rule);transition:background .3s}
+.sched__meta{display:flex;gap:1.1rem;align-items:center}
+.sched__row:hover{background:var(--paper-2)}
+.sched__t{color:var(--ink-3);min-width:44px}
+.stamp{display:inline-block;padding:.32rem .55rem;border:1px solid var(--ink-3);color:var(--ink-3);min-width:112px;text-align:center;transition:background .35s,color .35s,border-color .35s}
+.sched__row.busy .stamp{background:var(--sky);border-color:var(--sky);color:var(--ink)}
+.sched__c{display:flex;flex-direction:column;gap:.5rem;max-width:62ch}
+.sched__c p{color:var(--ink-2)}
+@media (max-width:640px){
+  .sched__row{grid-template-columns:1fr;gap:.7rem}
+  .stamp{min-width:0}
+}
+
+/* что разберём */
+.blocks{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.block{background:var(--paper);padding:1.5rem 1.4rem 1.6rem;display:flex;flex-direction:column;gap:1rem;min-height:100%}
+.block .mono{color:var(--ink-3)}
+.block p{color:var(--ink-2)}
+.block .todo{margin-top:auto;padding-top:1rem;border-top:1px dashed var(--rule);display:flex;flex-direction:column;gap:.35rem}
+.block .todo b{font-weight:500;color:var(--ink)}
+@media (max-width:900px){.blocks{grid-template-columns:1fr}}
+
+/* кто ведёт */
+.host{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(1.6rem,4vw,4rem);align-items:start}
+.host__media{margin:0;position:relative}
+.host__media img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:50% 20%}
+.host__media figcaption{position:absolute;right:.9rem;bottom:.9rem;color:var(--paper);background:color-mix(in srgb,var(--ink) 72%,transparent);padding:.45rem .7rem}
+.host__text{display:flex;flex-direction:column;gap:1.5rem}
+.host__text p{color:var(--ink-2);max-width:56ch}
+.nums{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--ink)}
+.nums div{padding:1.1rem 0 1.2rem;border-bottom:1px solid var(--rule);display:flex;flex-direction:column;gap:.3rem}
+.nums div:nth-child(odd){padding-right:1.2rem;border-right:1px solid var(--rule)}
+.nums div:nth-child(even){padding-left:1.2rem}
+.nums b{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,3vw,2.7rem);line-height:1;letter-spacing:-.01em}
+.nums .mono{color:var(--ink-3)}
+@media (max-width:900px){.host{grid-template-columns:1fr}.host__media img{aspect-ratio:4/3;object-position:50% 25%}}
+
+/* кому не подходит */
+.nope{border-top:1px solid var(--ink)}
+.nope li{display:grid;grid-template-columns:78px 1fr;gap:1.4rem;padding:1.2rem 0 1.3rem;border-bottom:1px solid var(--rule)}
+.nope .mono{color:var(--ink-3);padding-top:.3rem}
+.nope p{max-width:62ch}
+.nope p b{font-weight:500}
+@media (max-width:640px){.nope li{grid-template-columns:1fr;gap:.4rem}}
+
+/* финал */
+.final{background:var(--ink);color:var(--paper);color-scheme:dark}
+.final .slot__time{color:var(--ink-3)}
+.final .slot__head .lead{color:#B9BEC5}
+.final .slot{border-bottom:0}
+.count{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#262B32;border:1px solid #262B32;max-width:880px}
+.count div{background:var(--ink);padding:1.2rem 1rem 1.1rem;display:flex;flex-direction:column;gap:.5rem;align-items:flex-start}
+.count b{font-family:var(--mono);font-weight:400;font-size:clamp(2.2rem,5.6vw,4.6rem);line-height:1;color:var(--sky);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.count .mono{color:#8C939B}
+.final__cta{display:flex;flex-wrap:wrap;gap:1.6rem;align-items:center}
+.final__cta .mono{color:#8C939B;max-width:34ch;letter-spacing:.04em;text-transform:none;font-size:.82rem;line-height:1.5}
+.final__when{font-family:var(--serif);font-size:clamp(1.3rem,2vw,1.7rem);line-height:1.3;max-width:30ch}
+.final__when i{font-style:normal;color:var(--sky)}
+
+/* подвал */
+footer{border-top:1px solid var(--rule)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem 2rem;padding:1.6rem 0 2.2rem;color:var(--ink-3)}
+.foot a{text-decoration:none;color:var(--ink-2)}
+.foot a:hover{color:var(--ink);text-decoration:underline}
+.foot__links{display:flex;flex-wrap:wrap;gap:1.4rem}
+
+/* появление */
+html.js .reveal{opacity:0;transform:translateY(14px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+html.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html.js .reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="wrap top__in">
+    <a class="brand" href="#top">Елена Плыгач</a>
+    <div class="top__meta mono">Пн 28.09 · 19:00 МСК · Zoom · бесплатно</div>
+    <a class="top__cta" href="https://t.me/Psyplygach_bot?start=site_top" target="_blank" rel="noopener">Записаться</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="hero__text">
+    <div class="hero__top">
+      <p class="mono eyebrow">Открытая встреча для психологов и коучей</p>
+      <h1>Почему у хорошего психолога <mark>нет клиентов</mark></h1>
+      <p class="lead">Пять причин пустого расписания. Ни одна из них не про вашу квалификацию. Разбираем за 85 минут в Zoom, бесплатно, с живыми примерами из чата.</p>
+      <div class="hero__actions">
+        <a class="btn" href="https://t.me/Psyplygach_bot?start=site" target="_blank" rel="noopener">Записаться в Telegram <span class="arr">→</span></a>
+        <p class="mono small hero__note">Регистрация в боте, три коротких вопроса</p>
+      </div>
+    </div>
+    <dl class="facts mono">
+      <div><dt>Когда</dt><dd>Понедельник, 28 сентября 2026</dd></div>
+      <div><dt>Время</dt><dd>19:00 Москва · 13:00 Буэнос-Айрес</dd></div>
+      <div><dt>Где</dt><dd>Zoom. Ссылка приходит в канале встречи</dd></div>
+    </dl>
+  </div>
+  <figure class="hero__media">
+    <img src="img/hero.jpg" width="960" height="1280" alt="Елена Плыгач сидит в чёрном платье посреди пустой белой студии" fetchpriority="high">
+    <figcaption class="mono small">Пустое расписание выглядит примерно так</figcaption>
+  </figure>
+</section>
+
+<div class="ticker mono" aria-hidden="true">
+  <div class="ticker__track">
+    <span>96 сессий в месяц <i>·</i></span><span>клиенты остаются по 3–4 года <i>·</i></span><span>магистр бизнес-психологии ВШЭ <i>·</i></span><span>10 000 часов практики <i>·</i></span><span>шесть собственных бизнесов до психологии <i>·</i></span><span>ведёт практику из Буэнос-Айреса <i>·</i></span><span>окупила магистратуру вдвое, пока училась <i>·</i></span>
+    <span>96 сессий в месяц <i>·</i></span><span>клиенты остаются по 3–4 года <i>·</i></span><span>магистр бизнес-психологии ВШЭ <i>·</i></span><span>10 000 часов практики <i>·</i></span><span>шесть собственных бизнесов до психологии <i>·</i></span><span>ведёт практику из Буэнос-Айреса <i>·</i></span><span>окупила магистратуру вдвое, пока училась <i>·</i></span>
+  </div>
+</div>
+
+<section class="slot" id="about-you">
+  <div class="slot__time mono"><span>10:00</span></div>
+  <div class="slot__body">
+    <div class="slot__head reveal">
+      <h2>Это про вас, если</h2>
+      <p class="lead">У вас есть три, четыре, пять клиентов. Вы хороший специалист и знаете это. А расписание не заполняется, и каждый новый клиент приходит случайно.</p>
+    </div>
+    <ul class="checks reveal">
+      <li><span class="mono">Учёба</span><p>Идёте на следующее обучение, потому что «ещё рано» брать больше клиентов.</p></li>
+      <li><span class="mono">Ниша</span><p>Не можете объяснить одной фразой, с чем именно к вам идти.</p></li>
+      <li><span class="mono">Цена</span><p>Называете стоимость и сразу начинаете оправдываться или предлагать скидку.</p></li>
+      <li><span class="mono">Удержание</span><p>Клиенты уходят после двух-трёх встреч, и вы снова ищете новых.</p></li>
+      <li><span class="mono">Видимость</span><p>Блог заведён, но писать в него страшно, и он молчит месяцами.</p></li>
+      <li><span class="mono">Доход</span><p>Практика приносит меньше, чем найм, из которого вы уходили ради неё.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="slot" id="reasons">
+  <div class="slot__time mono"><span>11:00</span></div>
+  <div class="slot__body">
+    <div class="slot__head reveal">
+      <h2>Пять причин пустого расписания</h2>
+      <p class="lead">Ни одна не про квалификацию. Каждая узнаётся с первого предложения. На встрече разбираем, какая из них ваша, и что с ней делать уже на этой неделе.</p>
+    </div>
+    <ol class="sched reveal">
+      <li class="sched__row">
+        <div class="sched__meta"><span class="sched__t mono">10:00</span><span class="stamp mono" aria-hidden="true">свободно</span></div>
+        <div class="sched__c"><h3>Вы ждёте, а не идёте</h3><p>Ещё один сертификат ощущается как работа, но клиентов не приводит. Учёба стала легальным способом не начинать.</p></div>
+      </li>
+      <li class="sched__row">
+        <div class="sched__meta"><span class="sched__t mono">11:00</span><span class="stamp mono" aria-hidden="true">свободно</span></div>
+        <div class="sched__c"><h3>Непонятно, кто ваш клиент</h3><p>«Работаю со всеми запросами» читается как «ни с кем конкретно». Человек с болью проходит мимо, потому что не узнал себя.</p></div>
+      </li>
+      <li class="sched__row">
+        <div class="sched__meta"><span class="sched__t mono">12:00</span><span class="stamp mono" aria-hidden="true">свободно</span></div>
+        <div class="sched__c"><h3>Вы боитесь назвать цену</h3><p>Дешёвая сессия притягивает клиента, который не дойдёт до результата. Цена уже часть терапии, а не препятствие к ней.</p></div>
+      </li>
+      <li class="sched__row">
+        <div class="sched__meta"><span class="sched__t mono">13:00</span><span class="stamp mono" aria-hidden="true">свободно</span></div>
+        <div class="sched__c"><h3>Вы работаете разово</h3><p>Пока клиент приходит на одну встречу и уходит, вы вечно ищете новых. Удержание даёт доходу больше, чем любой трафик.</p></div>
+      </li>
+      <li class="sched__row">
+        <div class="sched__meta"><span class="sched__t mono">14:00</span><span class="stamp mono" aria-hidden="true">свободно</span></div>
+        <div class="sched__c"><h3>Вы не выдерживаете быть видимым</h3><p>Пустой блог никак не связан с ленью. Это страх оценки, и он лечится теми же методами, что вы применяете к клиентам.</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="slot" id="program">
+  <div class="slot__time mono"><span>12:00</span></div>
+  <div class="slot__body">
+    <div class="slot__head reveal">
+      <h2>Что разберём за 85 минут</h2>
+      <p class="lead">Три блока, в каждом одно действие, которое можно сделать завтра без меня. Потом живые разборы ситуаций из чата.</p>
+    </div>
+    <div class="blocks reveal">
+      <div class="block">
+        <span class="mono">Блок 01</span>
+        <h3>Кто ваш клиент</h3>
+        <p>Как найти своё ядро по тем, кто уже к вам пришёл, а не по фантазиям о «целевой аудитории». За что именно вам платят и почему остальные проходят мимо.</p>
+        <div class="todo"><span class="mono small">Действие на завтра</span><b>Выписать последних десять клиентов и найти общее</b></div>
+      </div>
+      <div class="block">
+        <span class="mono">Блок 02</span>
+        <h3>Шесть источников клиентов без бюджета</h3>
+        <p>Прямой аутрич, нетворкинг, чаты, профессиональные сообщества, коллаборации и реферальные партнёрства. Что работает в 2026 году и что перестало.</p>
+        <div class="todo"><span class="mono small">Действие на завтра</span><b>Написать трём смежным специалистам</b></div>
+      </div>
+      <div class="block">
+        <span class="mono">Блок 03</span>
+        <h3>Почему клиент остаётся на годы</h3>
+        <p>Что происходит на первой встрече у специалиста, с которым остаются на три-четыре года. И как это меняет доход сильнее, чем поток новых заявок.</p>
+        <div class="todo"><span class="mono small">Действие на завтра</span><b>Пересобрать свою первую встречу</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slot" id="host">
+  <div class="slot__time mono"><span>13:00</span></div>
+  <div class="slot__body">
+    <div class="host">
+      <figure class="host__media reveal">
+        <img src="img/elena.jpg" width="960" height="1280" alt="Елена Плыгач в чёрном платье в кожаном кресле смотрит в камеру" loading="lazy">
+        <figcaption class="mono small">13:00, Буэнос-Айрес. 19:00 по Москве</figcaption>
+      </figure>
+      <div class="host__text reveal">
+        <div class="slot__head">
+          <h2>Кто ведёт</h2>
+        </div>
+        <p><b>Елена Плыгач.</b> Психолог, магистр бизнес-психологии ВШЭ, диплом с отличием 2026 года. До психологии было шесть собственных бизнесов, банкротство и сборка себя заново с нуля.</p>
+        <p>Сейчас ведёт практику из Буэнос-Айреса: 96 сессий в месяц, клиенты остаются на три-четыре года. Магистратуру окупила вдвое, пока ещё училась, со второго месяца обучения. Работает с предпринимателями и с психологами, которые упёрлись в потолок.</p>
+        <div class="nums">
+          <div><b>96</b><span class="mono">сессий в месяц</span></div>
+          <div><b>3–4 года</b><span class="mono">клиенты остаются</span></div>
+          <div><b>×2</b><span class="mono">окупаемость магистратуры</span></div>
+          <div><b>10 000</b><span class="mono">часов практики</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slot" id="not-for">
+  <div class="slot__time mono"><span>14:00</span></div>
+  <div class="slot__body">
+    <div class="slot__head reveal">
+      <h2>Кому эта встреча не подойдёт</h2>
+      <p class="lead">Честно заранее, чтобы не тратить ваш вечер.</p>
+    </div>
+    <ul class="nope reveal">
+      <li><span class="mono">Рано</span><p><b>Вы ещё учитесь и у вас не было ни одного платного клиента.</b> Сначала первые пять человек, потом разговор о расписании.</p></li>
+      <li><span class="mono">Схема</span><p><b>Вы ищете способ заработать миллион за месяц.</b> Таких способов у меня нет, и я не верю в тех, кто их обещает.</p></li>
+      <li><span class="mono">За вас</span><p><b>Вам нужен кто-то, кто всё сделает вместо вас.</b> Я показываю маршрут. Идти по нему предстоит вам.</p></li>
+      <li><span class="mono">Масштаб</span><p><b>Расписание уже полное и вы думаете о команде.</b> Это другой разговор, напишите мне лично.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="final" id="register">
+  <div class="slot">
+    <div class="slot__time mono"><span>19:00</span></div>
+    <div class="slot__body">
+      <div class="slot__head reveal">
+        <h2>До встречи осталось</h2>
+      </div>
+      <div class="count reveal" id="count" aria-live="off">
+        <div><b id="c-d">—</b><span class="mono">дней</span></div>
+        <div><b id="c-h">—</b><span class="mono">часов</span></div>
+        <div><b id="c-m">—</b><span class="mono">минут</span></div>
+        <div><b id="c-s">—</b><span class="mono">секунд</span></div>
+      </div>
+      <p class="final__when reveal">Понедельник, <i>28 сентября</i>, 19:00 по Москве. Zoom, 85 минут с вопросами.</p>
+      <div class="final__cta reveal">
+        <a class="btn btn--light" href="https://t.me/Psyplygach_bot?start=site_bottom" target="_blank" rel="noopener">Записаться в Telegram <span class="arr">→</span></a>
+        <p class="mono">Бот задаст три вопроса и пришлёт ссылку на канал встречи. Запись эфира получат только зарегистрированные, и только на сутки.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot mono">
+    <span>Елена Плыгач, 2026</span>
+    <div class="foot__links">
+      <a href="https://t.me/plygach_elena" target="_blank" rel="noopener">Написать Елене</a>
+      <a href="https://t.me/plygach_psy" target="_blank" rel="noopener">Канал в Telegram</a>
+      <a href="https://dzen.ru/plygach" target="_blank" rel="noopener">Дзен</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+
+  /* обратный отсчёт */
+  var target = new Date('2026-09-28T19:00:00+03:00').getTime();
+  var el = {d:document.getElementById('c-d'),h:document.getElementById('c-h'),m:document.getElementById('c-m'),s:document.getElementById('c-s')};
+  var when = document.querySelector('.final__when');
+  var head = document.querySelector('#register h2');
+  function pad(n){return n<10?'0'+n:''+n}
+  function tick(){
+    var diff = target - Date.now();
+    if (diff <= 0){
+      var over = -diff > 100*60*1000;
+      head.textContent = over ? 'Встреча прошла' : 'Встреча идёт';
+      when.innerHTML = over
+        ? 'Запись эфира на сутки получили зарегистрированные. Следующая встреча — в канале Елены.'
+        : 'Ссылка на Zoom — в канале встречи. Регистрация в боте открыта.';
+      el.d.textContent=el.h.textContent=el.m.textContent=el.s.textContent='00';
+      return;
+    }
+    var s=Math.floor(diff/1000);
+    el.d.textContent=pad(Math.floor(s/86400));
+    el.h.textContent=pad(Math.floor(s%86400/3600));
+    el.m.textContent=pad(Math.floor(s%3600/60));
+    el.s.textContent=pad(s%60);
+    setTimeout(tick, 1000 - (Date.now()%1000));
+  }
+  tick();
+
+  /* появление блоков */
+  var items = [].slice.call(document.querySelectorAll('.reveal'));
+  var rows = [].slice.call(document.querySelectorAll('.sched__row'));
+  function fill(row, i){ setTimeout(function(){ row.classList.add('busy'); var st=row.querySelector('.stamp'); if(st) st.textContent='занято'; }, 260 + i*220); }
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:.08});
+    items.forEach(function(n){ io.observe(n); });
+    var io2 = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ fill(e.target, rows.indexOf(e.target)); io2.unobserve(e.target);} });
+    }, {threshold:.5});
+    rows.forEach(function(r){ io2.observe(r); });
+    setTimeout(function(){ items.forEach(function(n){ n.classList.add('in'); }); }, 2500);
+  } else {
+    items.forEach(function(n){ n.classList.add('in'); });
+    rows.forEach(fill);
+  }
+})();
+</script>
+</body>
+</html>
