@@ -416,6 +416,23 @@ html.js .reveal.in{opacity:1;transform:none}
 (function(){
   document.documentElement.classList.add('js');
 
+  /* метка источника: ?src=ig → бот получает start=site_ig */
+  (function(){
+    var BOT = 'https://t.me/Psyplygach_bot?start=';
+    var q = new URLSearchParams(location.search);
+    var src = q.get('src') || q.get('utm_source') || '';
+    if (!src) {
+      var r = (document.referrer || '').toLowerCase();
+      var map = [['instagram','ig'],['threads','th'],['t.me','tg'],['telegram','tg'],['dzen.ru','dzen'],['vk.com','vk'],['youtube','yt'],['facebook','fb'],['google','google'],['yandex','yandex']];
+      for (var i=0;i<map.length;i++){ if (r.indexOf(map[i][0])>-1){ src = map[i][1]; break; } }
+    }
+    src = src.toLowerCase().replace(/[^a-z0-9_-]/g,'').slice(0,20);
+    try { if (src) sessionStorage.setItem('src', src); else src = sessionStorage.getItem('src') || ''; } catch(e){}
+    var tag = 'site' + (src ? '_' + src : '');
+    document.querySelectorAll('a[href^="https://t.me/Psyplygach_bot"]').forEach(function(a){ a.href = BOT + tag; });
+  })();
+
+
   /* обратный отсчёт */
   var target = new Date('2026-09-29T19:30:00+03:00').getTime();
   var el = {d:document.getElementById('c-d'),h:document.getElementById('c-h'),m:document.getElementById('c-m'),s:document.getElementById('c-s')};
